@@ -13,7 +13,7 @@ def getLocations():
 
 @app.route("/api/craters")
 def getCreaters():
-    df = pd.read_csv("./collections/1979_sm_locations.csv")
+    df = pd.read_csv("./collections/moon_features.csv")
     return pd.DataFrame(df).to_json()
 
 
